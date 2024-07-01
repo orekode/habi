@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+  transition: .2s;
+}
+
+@layer components {
+  .flex-center {
+    @apply items-center justify-center flex
+  }
+  
+
+  .hw-screen {
+    @apply h-screen w-screen
+  }
+
+  .fixed-screen {
+    @apply hw-screen 
+  }
+
+  .hw-full {
+    @apply h-full w-full
+  }
+  
+
+  .img-cover {
+    @apply hw-full object-cover
+  }
+
+  .btn-md {
+    @apply bg-green-600 hover:bg-green-500 active:bg-green-700 bg-opacity-80 text-white px-3 py-2 rounded-2xl w-full font-medium
+  }
+
+  .abs-y-center {
+    @apply absolute top-1/2 -translate-y-1/2
+  }
+
+  .btn-dark {
+    @apply bg-green-600 hover:bg-green-500 active:bg-green-700 text-white px-6 py-2 w-full rounded-xl font-semibold shadow-xl transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply border-green-600 hover:bg-green-500 active:bg-green-700 hover:text-white text-green-400 border-2 px-6 py-2 w-full rounded-xl font-semibold shadow-xl transition-all duration-300;
+  }
+  .bg-animate {
+    @apply bg-gray-300 transition-all duration-300;
+    animation: bg-animate 3s ease-in-out infinite;
+  }
+
+  .grid-box {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    @apply grid;
+  }
+  
+  .grid-box-300 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    @apply grid;
+  }
+
+  .grid-fit-300 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    @apply grid;
+  }
+
+  .grid-box-220 {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    @apply grid;
+  }
+
+  @keyframes bg-animate {
+    0%, 100% {
+        @apply bg-gray-200
+    }
+    50% {
+        @apply bg-gray-100
+    }
+  }
+}
+
+.panel {
+  --width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.panel.active {
+  width: calc(100vw + var(--width));
+  left: calc(-1 * var(--width));
+}
+
+.panel > .left {
+  width: var(--width);
+}
+
+.panel > .right {
+  width: calc(100vw - var(--width));
+}
+
+.panel.active > .right {
+  width: 100vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .panel {
+    width: calc(100vw + var(--width));
+    left: calc(-1 * var(--width));
+  }
+
+  .panel.active {
+    left: 0;
+  }
+
+  .panel > .right {
+    width: 100vw;
+  }
+}

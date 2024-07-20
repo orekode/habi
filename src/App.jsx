@@ -3,6 +3,15 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import * as Layouts from "@/layouts.js";
 import * as Pages from "@/pages.js";
 
+
+/*
+
+make images work from hosted backend
+extract apk
+audio ghanaNLP  +
+
+*/
+
 function App() {
 
   const router = createBrowserRouter(

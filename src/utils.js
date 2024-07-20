@@ -18,7 +18,7 @@ export const greet = () => {
 
     if (hour < 12) {
         greeting = "Good morning";
-    } else if (hour < 15) {
+    } else if (hour < 16.5) {
         greeting = "Good afternoon";
 
     } else {

@@ -34,7 +34,7 @@ const Diagnosis = ({diagnosis, callback=()=>{}}) => {
             <div className="mt-6 mb-2 font-bold text-xl">{diagnosis?.title}</div>
             <p className='text-gray-800 leading-loose'>{diagnosis?.content}</p>
 
-            {diagnosis.buy_link && 
+            {(diagnosis.buy_link && diagnosis.buy_link !== "nan") && 
               <div className="my-6">
                 <p className="italic font-medium">{diagnosis.suppliment_name ?? "We have a product that"} could help you treat or prevent this</p>
                 <button className="bg-green-500 text-white w-full text-center px-3 py-2 mt-3 rounded-xl" onClick={() => location.href=diagnosis.buy_link }>Click To Buy</button>

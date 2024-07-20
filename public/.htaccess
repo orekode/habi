@@ -8,9 +8,9 @@ RewriteCond %{REQUEST_URI} !^/index\.html
 RewriteRule !\.(css|js|png|jpg|gif|html|avif)$ /index.html [L]
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-SSL} !on
-RewriteCond %{HTTP_HOST} ^rapidcrewtech\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.rapidcrewtech\.com$
-RewriteRule ^/?$ "https\:\/\/rapidcrewtech\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^habi-iota.vercel\.app$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.habi-iota.vercel\.app$
+RewriteRule ^/?$ "https\:\/\/habi-iota.vercel\.app\/" [R=301,L]
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php82” package as the default “PHP” programming language.

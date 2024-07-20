@@ -1,0 +1,39 @@
+{
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html",
+        "has": [
+          {
+            "type": "host",
+            "value": "habi-iota.vercel.app"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "https://habi-iota.vercel.app/",
+        "permanent": true,
+        "has": [
+          {
+            "type": "host",
+            "value": "habi-iota.vercel.app"
+          }
+        ]
+      },
+      {
+        "source": "/",
+        "destination": "https://habi-iota.vercel.app/",
+        "permanent": true,
+        "has": [
+          {
+            "type": "host",
+            "value": "www.habi-iota.vercel.app"
+          }
+        ]
+      }
+    ]
+  }
+  

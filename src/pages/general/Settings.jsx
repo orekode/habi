@@ -1,9 +1,12 @@
 import { ChevronLeft, User } from 'lucide-react'
 import React from 'react'
+import { useAuth } from '@/store/auth';
 import { Link } from 'react-router-dom'
 
 const Settings = () => {
 
+     const { data: { firstName, lastName } } = useAuth();
+     console.log(useAuth())
     const settings = [
         {
             name: 'FAQ'
@@ -33,7 +36,7 @@ const Settings = () => {
             <div className="h-[120px] w-[120px] border-2 rounded-full flex-center">
                 <User size={50}/>
             </div>
-            <div className="font-semibold mt-1.5">Full Name Here</div>
+            <div className="font-semibold mt-1.5">{firstName+ " " + lastName}</div>
         </div>
 
         <div className="contents">

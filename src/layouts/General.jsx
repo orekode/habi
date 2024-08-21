@@ -7,15 +7,16 @@ import { Toaster } from 'sonner';
 import useCartStore from '../store/cart';
 
 const General = () => {
-    const [ show, setShow ] = useState(true);
+    const [ show, setShow ] = useState(false);
 
     const { cart, increaseQuantity, decreaseQuantity, cartVisible, toggleCartVisibility, removeFromCart } = useCartStore();
 
     const navigate = useNavigate();
 
-    useEffect(() => {
-        setTimeout(() => setShow(false), 7000)
-    }, []);
+    // why tf do we need this? why would you want to wait 7s on purpose?????
+    // useEffect(() => {
+    //     setTimeout(() => setShow(false), 7000)
+    // }, []);
 
   return (
     <div>

@@ -25,8 +25,6 @@ const History = () => {
     if (data) setDiagnoses(data);
   }, [data]);
 
-  console.log(data);
-
   if(showDiagnosis) return <Diagnosis diagnosis={diagnosis} callback={setShowDiagnosis} />
 
   return (

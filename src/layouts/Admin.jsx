@@ -74,7 +74,7 @@ const Admin = () => {
                 </div>
 
                 <div className="flex items-center gap-3">
-                    <div className="name text-md">David Shalom</div>
+                    <div className="name text-md">Emmanuel Agyekum</div>
                     <div className="dp h-[35px] w-[35px] rounded-full border flex-center">
                         <User size={20} />
                     </div>

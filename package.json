@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@bubblewrap/cli": "^1.21.0",
+    "@headlessui/react": "^2.1.2",
+    "@heroicons/react": "^2.1.5",
     "axios": "^1.7.2",
     "jslib-html5-camera-photo": "^3.3.4",
     "lucide-react": "^0.379.0",

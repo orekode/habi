@@ -64,7 +64,7 @@ const Login = () => {
       
 
       setData({token: result.token, ...result.data, number: data.number, loggedIn: true, role: data.number == "0508809987" ? "admin": "user"});
-      navigate('/admin')
+      navigate('/home')
 
       setLoad(false);
 

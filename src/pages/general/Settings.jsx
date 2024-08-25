@@ -10,9 +10,14 @@ const Settings = () => {
     const settings = [
         {
             name: 'FAQ'
+             name: 'How accurate is the disease detection?'
+             name: 'Our app has been trained on a large dataset and achieves [insert accuracy percentage]% accuracy.'
+
+             
         },
         {
             name: 'Contact Us'
+             +233 53912672
         },
         {
             name: 'Terms Of Use'

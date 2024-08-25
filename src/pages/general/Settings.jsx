@@ -9,7 +9,7 @@ const Settings = () => {
      console.log(useAuth())
     const settings = [
         {
-            name: 'FAQ'
+            name: 'FAQQ'
         },
         {
             name: 'Contact Us'

@@ -12,6 +12,7 @@ export const useAuth = create(
         firstName: '',
         lastName: '',
         location: '',
+        otp: false,
       },
       setData: (data) => set({ data: {...get().data, ...data} }),
     }),

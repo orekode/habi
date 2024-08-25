@@ -6,7 +6,7 @@ import Loading from '@/components/Loading';
 import { signin } from '@/calls/auth';
 import { toast } from 'sonner';
 import Swal from 'sweetalert2';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { sendOtp } from '@/calls/auth';
 import { useAuth } from '@/store/auth';
 
@@ -124,7 +124,11 @@ const Login = () => {
                     {!visible ? <Eye size={20}/> : <EyeOff size={20} />}
                   </div>
                 </div>
-                <span className="text-xs text-right my-1.5 text-green-700">Forgot Password?</span>
+                <span className="text-xs text-right my-1.5 text-green-700">
+                  <Link to={'/forgot'}>
+                    Forgot Password?
+                  </Link>
+                </span>
               </div>
 
               <div className="my-7">

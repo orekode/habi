@@ -55,6 +55,7 @@ export const createUser = async (data) => {
 export const sendOtp = async (number) => {
     try {
 
+      console.log("i got here")
       const result = await axios.post('/sendOtp', {
         number
       });
@@ -82,4 +83,20 @@ export const confirmOtp = async (otp, number) => {
       console.log(e);
       return false;
     }
+}
+
+export const resetPassword = async (data) => {
+  try {
+
+    const result = await axios.post('/auth/reset', {
+      ...data
+    });
+
+    return result;
+
+  }
+  catch(e) {
+    console.log(e);
+    return e?.response;
+  }
 }

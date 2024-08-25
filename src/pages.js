@@ -1,7 +1,10 @@
 
-export { default as Login        } from "@/pages/auth/Login";
-export { default as Verification } from "@/pages/auth/Verification";
-export { default as PersonalInfo } from "@/pages/auth/PersonalInfo";
+export { default as Login         } from "@/pages/auth/Login";
+export { default as Forgot        } from "@/pages/auth/Forgot";
+export { default as Verification  } from "@/pages/auth/Verification";
+export { default as Verification2 } from "@/pages/auth/Verification2";
+export { default as Reset         } from "@/pages/auth/Reset";
+export { default as PersonalInfo  } from "@/pages/auth/PersonalInfo";
 
 export { default as Home         }  from "@/pages/general/Home";
 export { default as Article      }  from "@/pages/general/Article";

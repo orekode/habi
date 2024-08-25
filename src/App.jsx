@@ -17,9 +17,12 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<Layouts.General />}>
-        <Route index                    element={<Pages.Login        />} />
-        <Route path="verify"            element={<Pages.Verification />} />
-        <Route path="info"              element={<Pages.PersonalInfo />} />
+        <Route index                    element={<Pages.Login         />} />
+        <Route path="forgot"            element={<Pages.Forgot        />} />
+        <Route path="verify"            element={<Pages.Verification  />} />
+        <Route path="verify2"           element={<Pages.Verification2 />} />
+        <Route path="reset"             element={<Pages.Reset         />} />
+        <Route path="info"              element={<Pages.PersonalInfo  />} />
 
         <Route element={<Layouts.User />}>
           <Route path="home"              element={<Pages.Home         />} />
